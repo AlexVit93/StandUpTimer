@@ -53,6 +53,6 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 
 Готовый .exe находится в `bin/Release/net8.0-windows/win-x64/publish/`
 
-<a
-href="
-https://www.dropbox.com/scl/fi/0mf8nlqqqj5gpqclylhua/StandUpTimer.exe?rlkey=g2lx6q8x2pc7nwguvkdbwzdy3&st=mevm9ilv&dl=0"> Также скачать можно тут</a>
+## Также скачать можно тут
+
+https://www.dropbox.com/scl/fi/0mf8nlqqqj5gpqclylhua/StandUpTimer.exe?rlkey=g2lx6q8x2pc7nwguvkdbwzdy3&st=mevm9ilv&dl=0
