@@ -25,11 +25,6 @@ public class AppController : IDisposable
         _currentState = AppState.Initial();
     }
     
-    // private void OnTimerElapsed(AppState state)
-    // {
-    //     _notificationService.ShowNotification();
-    //     _trayIcon.ShowNotification("90 минут истекло! Пора размяться.");
-    // }
 private void OnTimerElapsed(AppState state)
 {
     var form = Application.OpenForms.Count > 0 ? Application.OpenForms[0] : null;
@@ -84,3 +79,6 @@ private void OnTimerElapsed(AppState state)
         _trayIcon.Dispose();
     }
 }
+
+
+

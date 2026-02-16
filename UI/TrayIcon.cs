@@ -8,22 +8,14 @@ public class TrayIcon : IDisposable
     public event Action? ResetTimerRequested;
     public event Action? ExitRequested;
     
-    public TrayIcon()
+public TrayIcon()
     {
-        string exeDir = Path.GetDirectoryName(Environment.ProcessPath!)!;
-        string iconPath = Path.Combine(exeDir, "Resources", "timer.ico");
-
-        Icon icon = File.Exists(iconPath)
-            ? new Icon(iconPath)
-            : SystemIcons.Application;
-
-
         _notifyIcon = new NotifyIcon
         {
-            Icon = icon,
-            Text = "StandUp Timer\nКаждые 90 минут"
+            Icon = SystemIcons.Application,
+            Text = "StandUp Timer\nКаждые 90 минут",
+            Visible = true
         };
-        Application.Idle += (s, e) => _notifyIcon.Visible = true;
         
         _contextMenu = new ContextMenuStrip();
         _contextMenu.Items.Add("Сбросить таймер", null, (s, e) => ResetTimerRequested?.Invoke());
