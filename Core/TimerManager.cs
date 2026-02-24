@@ -5,7 +5,7 @@ namespace StandUpTimer.Core;
 public class TimerManager : IDisposable
 {
     private readonly System.Threading.Timer _timer;
-    private readonly TimeSpan _interval = TimeSpan.FromMinutes(90);
+    private readonly TimeSpan _interval = TimeSpan.FromMinutes(60);
     private AppState _currentState;
     
     public event Action<AppState>? TimerElapsed;

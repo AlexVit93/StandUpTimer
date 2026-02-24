@@ -23,7 +23,7 @@ public class NotificationService
         
         var label = new Label
         {
-            Text = "ВСТАНЬ И ПРОЙДИСЬ!\n\nПосидел 90 минут - пора размяться.",
+            Text = "ВСТАНЬ И ПРОЙДИСЬ!\n\nПосидел 60 минут - пора размяться.",
             Font = new Font("Arial", 24, FontStyle.Bold),
             TextAlign = ContentAlignment.MiddleCenter,
             Dock = DockStyle.Fill

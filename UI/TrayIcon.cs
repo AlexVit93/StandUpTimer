@@ -13,7 +13,7 @@ public TrayIcon()
         _notifyIcon = new NotifyIcon
         {
             Icon = SystemIcons.Application,
-            Text = "StandUp Timer\nКаждые 90 минут",
+            Text = "StandUp Timer\nКаждые 60 минут",
             Visible = true
         };
         

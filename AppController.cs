@@ -34,13 +34,13 @@ private void OnTimerElapsed(AppState state)
         form.BeginInvoke(() =>
         {
             _notificationService.ShowNotification();
-            _trayIcon.ShowNotification("90 минут истекло! Пора размяться.");
+            _trayIcon.ShowNotification("60 минут истекло! Пора размяться.");
         });
     }
     else
     {
         _notificationService.ShowNotification();
-        _trayIcon.ShowNotification("90 минут истекло! Пора размяться.");
+        _trayIcon.ShowNotification("60 минут истекло! Пора размяться.");
     }
 }
     
@@ -53,7 +53,7 @@ private void OnTimerElapsed(AppState state)
     {
         _timerManager.ResetTimer();
         _notificationService.HideNotification();
-        _trayIcon.ShowNotification("Таймер сброшен. Следующее напоминание через 90 минут.");
+        _trayIcon.ShowNotification("Таймер сброшен. Следующее напоминание через 60 минут.");
     }
     
     private void OnExitRequested()
